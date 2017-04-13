@@ -8,4 +8,9 @@ public class PluginActivateHandler implements IJsonHandler<Void, ActivateRespons
     public ActivateResponse handle(Void aRequest) {
         return new ActivateResponse(PluginType.NetworkDriver);
     }
+
+    @Override
+    public Class<Void> getRequestClass() {
+        return Void.class;
+    }
 }

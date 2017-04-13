@@ -4,4 +4,5 @@ public interface IJsonHandler<I,O> {
 
     O handle(I aRequest);
 
+    Class<I> getRequestClass();
 }

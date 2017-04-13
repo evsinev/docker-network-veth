@@ -10,28 +10,14 @@ public class CreateNetworkRequestTest {
 
     @Test
     public void gson() {
-        String json = "{\n" +
-                "    \"NetworkID\": \"1b99d6a68a5ec70bd7f8e88a55448a06cc8206e8ad9b0b3de932b4a4fa1c1c94\",\n" +
-                "    \"Options\": {\n" +
-                "        \"com.docker.network.enable_ipv6\": false,\n" +
-                "        \"com.docker.network.generic\": {}\n" +
-                "    },\n" +
-                "    \"IPv4Data\": [\n" +
-                "        {\n" +
-                "            \"AddressSpace\": \"LocalDefault\",\n" +
-                "            \"Gateway\": \"172.18.0.1/16\",\n" +
-                "            \"Pool\": \"172.18.0.0/16\"\n" +
-                "        }\n" +
-                "    ],\n" +
-                "    \"IPv6Data\": []\n" +
-                "}";
+        String json = "{\"NetworkID\":\"9f55eb121867c859bf6bdac33127f79aed641976263138d99e34637edf0cc3fe\",\"Options\":{\"com.docker.network.enable_ipv6\":false,\"com.docker.network.generic\":{}},\"IPv4Data\":[{\"AddressSpace\":\"LocalDefault\",\"Gateway\":\"172.18.0.1/16\",\"Pool\":\"172.18.0.0/16\"}],\"IPv6Data\":[]}";
         System.out.println("json = " + json);
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
         CreateNetworkRequest request = gson.fromJson(json, CreateNetworkRequest.class);
         System.out.println("request = " + request);
-        assertEquals("1b99d6a68a5ec70bd7f8e88a55448a06cc8206e8ad9b0b3de932b4a4fa1c1c94", request.networkID);
+        assertEquals("9f55eb121867c859bf6bdac33127f79aed641976263138d99e34637edf0cc3fe", request.networkID);
     }
 
 }

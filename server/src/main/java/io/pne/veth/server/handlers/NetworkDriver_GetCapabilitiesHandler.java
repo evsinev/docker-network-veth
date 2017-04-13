@@ -8,4 +8,9 @@ public class NetworkDriver_GetCapabilitiesHandler implements IJsonHandler<Void, 
     public CapabilitiesResponse handle(Void aRequest) {
         return new CapabilitiesResponse(CapabilityScope.local);
     }
+
+    @Override
+    public Class<Void> getRequestClass() {
+        return Void.class;
+    }
 }

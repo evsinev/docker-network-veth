@@ -8,4 +8,9 @@ public class NetworkDriver_ProgramExternalConnectivity implements IJsonHandler<P
     public SuccessResponse handle(ProgramExternalConnectivityRequest aRequest) {
         return SuccessResponse.SUCCESS;
     }
+
+    @Override
+    public Class<ProgramExternalConnectivityRequest> getRequestClass() {
+        return ProgramExternalConnectivityRequest.class;
+    }
 }

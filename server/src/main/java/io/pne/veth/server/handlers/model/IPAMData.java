@@ -7,4 +7,14 @@ public class IPAMData {
     public String Pool;
     public String Gateway;
     public Map<String, Object> AuxAddresses;
+
+    @Override
+    public String toString() {
+        return "IPAMData{" +
+                "AddressSpace='" + AddressSpace + '\'' +
+                ", Pool='" + Pool + '\'' +
+                ", Gateway='" + Gateway + '\'' +
+                ", AuxAddresses=" + AuxAddresses +
+                '}';
+    }
 }

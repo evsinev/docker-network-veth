@@ -36,7 +36,7 @@ public class HttpServerHandler extends SimpleChannelInboundHandler<FullHttpReque
     private FullHttpResponse createResponse(FullHttpRequest aRequest) {
         String uri = aRequest.uri();
         try {
-            debugLog(aRequest, uri);
+//            debugLog(aRequest, uri);
             return requestListener.createResponse(aRequest);
         } catch (Exception e) {
             LOG.error("Error while processing " + uri, e);

@@ -1,6 +1,8 @@
 package io.pne.veth.server.handlers;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.handler.codec.http.*;
@@ -24,7 +26,9 @@ public class JsonHandler<I, O> implements IHttpRequestListener {
 
     private final IJsonHandler<I, O> handler;
     private final Class<I> requestClass;
+
     private final Gson gson;
+    private final JsonParser parser = new JsonParser();
 
     private static final AsciiString HEADER_CONTENT_LENGTH = new AsciiString("Content-Length");
 
@@ -32,41 +36,43 @@ public class JsonHandler<I, O> implements IHttpRequestListener {
     public JsonHandler(Gson aGson, IJsonHandler<I, O> handler) {
         this.handler = handler;
         gson = aGson;
-        requestClass = findRequestClass(handler);
-    }
-
-    private Class<I> findRequestClass(IJsonHandler<I, O> aHandler) {
-        Class handlerClass = aHandler.getClass();
-        for (Method method : handlerClass.getMethods()) {
-            if(method.getName().equals("handle")) {
-                //noinspection unchecked
-                return (Class<I>) method.getParameterTypes()[0];
-            }
+        requestClass = handler.getRequestClass();
+        if(requestClass.isAssignableFrom(Object.class)) {
+            throw new IllegalArgumentException(handler.getClass().getSimpleName() + " has wrong argument in the method handler: " + requestClass);
         }
-        throw new IllegalStateException("No method handle(I aRequest) in the " + handlerClass.getSimpleName());
     }
 
     @Override
     public FullHttpResponse createResponse(FullHttpRequest aRequest) {
         int contentLength = aRequest.headers().getInt(HEADER_CONTENT_LENGTH);
-        LOG.info("Content length = {}", contentLength);
 
         if(requestClass.equals(Void.class) && contentLength != 0) {
             return error(aRequest, BAD_REQUEST, "Request must be empty but it has body with length of " + contentLength);
         }
 
         String body = aRequest.content().toString(StandardCharsets.UTF_8);
-        LOG.info("body = {}", body);
-        I requestObject = gson.fromJson(body, requestClass);
+
+        I requestObject = parseRequest(aRequest.uri(), body);
+
         LOG.info("request object = {}", requestObject);
 
         O response = handler.handle(requestObject);
 
         String outputJson = gson.toJson(response);
 
-        LOG.info("output = {}", outputJson);
+        LOG.info("Response:\n{}", outputJson);
 
         return ok(aRequest, outputJson);
+    }
+
+    protected I parseRequest(String aUrl, String body) {
+        JsonElement jsonElement = parser.parse(body);
+        LOG.info("Request for {}\n{}", aUrl, gson.toJson(jsonElement));
+        return gson.fromJson(jsonElement, requestClass);
+    }
+
+
+    private void dumpRequest(FullHttpRequest aRequest, String body) {
     }
 
     private FullHttpResponse error(HttpRequest aRequest, HttpResponseStatus aStatus, String aMessage) {
@@ -88,5 +94,13 @@ public class JsonHandler<I, O> implements IHttpRequestListener {
                 "handler=" + handler +
                 ", requestClass=" + requestClass +
                 '}';
+    }
+
+    public Class<I> getRequestClass() {
+        return requestClass;
+    }
+
+    public Class<? extends IJsonHandler> getHandlerClass() {
+        return handler.getClass();
     }
 }
