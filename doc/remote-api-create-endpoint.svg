@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   id="svg8194"
+   version="1.1"
+   inkscape:version="0.91+devel+osxmenu r12855"
+   sodipodi:docname="remote-api-create-endpoint.svg">
+  <defs
+     id="defs8196">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker17528"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path17530"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker16648"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path16650"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker16252"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path16254"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker15872"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:collect="always">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path15874" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker15572"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:collect="always">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path15574" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker14650"
+       style="overflow:visible;"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path14652"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker14272"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path14274" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker11644"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path11646"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker11404"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path11406" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker10264"
+       style="overflow:visible;"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path10266"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker9568"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:collect="always">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path9570" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path9275"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.84493736"
+     inkscape:cx="579.21054"
+     inkscape:cy="389.72445"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1916"
+     inkscape:window-height="1035"
+     inkscape:window-x="4"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata8199">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-87.000007)">
+    <rect
+       y="252.53418"
+       x="99.265251"
+       height="41.679813"
+       width="113.82624"
+       id="rect17488"
+       style="opacity:0.98000004;fill:#eeeeee;fill-opacity:1;stroke:none;stroke-width:0.26458335;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:0.98000004;fill:#eeeeee;fill-opacity:1;stroke:none;stroke-width:0.26458335;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect17486"
+       width="113.82624"
+       height="60.279373"
+       x="99.265251"
+       y="160.62772" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16.93333435px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="9.5553656"
+       y="98.7285"
+       id="text8761"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8763"
+         x="9.5553656"
+         y="98.7285"
+         style="font-size:4.23333348px">Docker Command</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text8765"
+       y="97.475937"
+       x="199.00479"
+       style="font-style:normal;font-weight:normal;font-size:16.93333435px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="97.475937"
+         x="199.00479"
+         id="tspan8767"
+         sodipodi:role="line"
+         style="font-size:4.23333348px">Network Driver</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16.93333435px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="280.42111"
+       y="97.162796"
+       id="text8769"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8771"
+         x="280.42111"
+         y="97.162796"
+         style="font-size:4.23333359px">Host</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16.93333435px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="117.90166"
+       y="93.664719"
+       id="text8773"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8775"
+         x="117.90166"
+         y="93.664719"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93888903px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'">Remote API: Create Endpoint</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text8791"
+       y="98.102203"
+       x="90.658501"
+       style="font-style:normal;font-weight:normal;font-size:16.93333435px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-size:4.23333348px"
+         y="98.102203"
+         x="90.658501"
+         id="tspan8793"
+         sodipodi:role="line">Docker</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#757575;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 97.386412,100.54436 0,193.98998"
+       id="path9258"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path9260"
+       d="m 25.051166,100.54436 0,193.3637"
+       style="fill:none;fill-rule:evenodd;stroke:#757575;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path9264"
+       d="m 286.16805,100.54436 0,194.30312"
+       style="fill:none;fill-rule:evenodd;stroke:#757575;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:0.98000004;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458335;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 26.616864,104.5339 67.011875,0"
+       id="path9266"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path9566"
+       d="m 100.54467,107.34608 109.28572,0"
+       style="opacity:0.98000004;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458335;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker9568)"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="opacity:0.98000004;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458335;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker10264)"
+       d="m 209.9012,192.25443 -109.28572,0"
+       id="path10262"
+       inkscape:connector-curvature="0" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text8795"
+       y="103.33801"
+       x="28.94083"
+       style="font-style:normal;font-weight:normal;font-size:4.23333359px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-size:2.82222223px"
+         id="tspan8807"
+         y="103.33801"
+         x="28.94083"
+         sodipodi:role="line">Run Container</tspan><tspan
+         style="font-size:2.82222223px"
+         y="106.86579"
+         x="28.94083"
+         sodipodi:role="line"
+         id="tspan12940" /><tspan
+         style="font-size:2.82222223px"
+         y="110.39357"
+         x="28.94083"
+         sodipodi:role="line"
+         id="tspan12938">docker run -it --rm \</tspan><tspan
+         style="font-size:2.82222223px"
+         y="113.92135"
+         x="28.94083"
+         sodipodi:role="line"
+         id="tspan8829">    --name dns-1  \</tspan><tspan
+         style="font-size:2.82222223px"
+         y="117.44913"
+         x="28.94083"
+         sodipodi:role="line"
+         id="tspan8831">    --ip 192.168.3.2 \</tspan><tspan
+         style="font-size:2.82222223px"
+         y="120.9769"
+         x="28.94083"
+         sodipodi:role="line"
+         id="tspan8833">    --mac-address 62:7b:0b:7d:54:8d \</tspan><tspan
+         style="font-size:2.82222223px"
+         y="124.50468"
+         x="28.94083"
+         sodipodi:role="line"
+         id="tspan8835">    --network dns-1 \</tspan><tspan
+         style="font-size:2.82222223px"
+         y="128.03247"
+         x="28.94083"
+         sodipodi:role="line"
+         id="tspan8837">    alpine /bin/sh</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333359px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="101.03999"
+       y="103.98244"
+       id="text8955"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan8957"
+         sodipodi:role="line"
+         x="101.03999"
+         y="103.98244"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'">/NetworkDriver.CreateEndpoint</tspan><tspan
+         sodipodi:role="line"
+         x="101.03999"
+         y="107.51022"
+         style="font-size:2.82222223px"
+         id="tspan8959" /><tspan
+         sodipodi:role="line"
+         x="101.03999"
+         y="111.038"
+         style="font-size:2.82222223px"
+         id="tspan14262">        &quot;NetworkID&quot;: &quot;8035 ... d2ef&quot;,</tspan><tspan
+         sodipodi:role="line"
+         x="101.03999"
+         y="114.56578"
+         style="font-size:2.82222223px"
+         id="tspan8961">        &quot;EndpointID&quot;: &quot;dc90 ... 9543&quot;,</tspan><tspan
+         sodipodi:role="line"
+         x="101.03999"
+         y="118.09356"
+         style="font-size:2.82222223px"
+         id="tspan8963">        &quot;Interface&quot;: {</tspan><tspan
+         sodipodi:role="line"
+         x="101.03999"
+         y="121.62133"
+         style="font-size:2.82222223px"
+         id="tspan8965">            &quot;Address&quot;: &quot;192.168.3.2/24&quot;,</tspan><tspan
+         sodipodi:role="line"
+         x="101.03999"
+         y="125.14911"
+         style="font-size:2.82222223px"
+         id="tspan8967">            &quot;AddressIPv6&quot;: &quot;&quot;,</tspan><tspan
+         sodipodi:role="line"
+         x="101.03999"
+         y="128.6769"
+         style="font-size:2.82222223px"
+         id="tspan8969">            &quot;MacAddress&quot;: &quot;62:7b:0b:7d:54:8d&quot;</tspan><tspan
+         sodipodi:role="line"
+         x="101.03999"
+         y="132.20468"
+         style="font-size:2.82222223px"
+         id="tspan8971">        },</tspan><tspan
+         sodipodi:role="line"
+         x="101.03999"
+         y="135.73245"
+         style="font-size:2.82222223px"
+         id="tspan8973">        &quot;Options&quot;: {</tspan><tspan
+         sodipodi:role="line"
+         x="101.03999"
+         y="139.26022"
+         style="font-size:2.82222223px"
+         id="tspan8975">            &quot;com.docker.network.endpoint.exposedports&quot;: [],</tspan><tspan
+         sodipodi:role="line"
+         x="101.03999"
+         y="142.78801"
+         style="font-size:2.82222223px"
+         id="tspan8977">            &quot;com.docker.network.endpoint.macaddress&quot;: &quot;YnsLfVSN&quot;,</tspan><tspan
+         sodipodi:role="line"
+         x="101.03999"
+         y="146.31578"
+         style="font-size:2.82222223px"
+         id="tspan8981">            &quot;com.docker.network.portmap&quot;: []</tspan><tspan
+         sodipodi:role="line"
+         x="101.03999"
+         y="149.84357"
+         style="font-size:2.82222223px"
+         id="tspan14260">        }</tspan><tspan
+         sodipodi:role="line"
+         x="101.03999"
+         y="153.37134"
+         style="font-size:2.82222223px"
+         id="tspan8983" /></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text8985"
+       y="148.74159"
+       x="178.27484"
+       style="font-style:normal;font-weight:normal;font-size:4.23333359px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         y="148.74159"
+         x="178.27484"
+         sodipodi:role="line"
+         id="tspan15520">&quot;Interface&quot;</tspan><tspan
+         style="font-size:2.82222223px"
+         y="152.26936"
+         x="178.27484"
+         sodipodi:role="line"
+         id="tspan8998">            &quot;Address&quot;: &quot;&quot;,</tspan><tspan
+         style="font-size:2.82222223px"
+         y="155.79715"
+         x="178.27484"
+         sodipodi:role="line"
+         id="tspan9000">            &quot;AddressIPv6&quot;: &quot;&quot;,</tspan><tspan
+         style="font-size:2.82222223px"
+         y="159.32492"
+         x="178.27484"
+         sodipodi:role="line"
+         id="tspan9002">            &quot;MacAddress&quot;: &quot;&quot;</tspan><tspan
+         style="font-size:2.82222223px"
+         y="162.85271"
+         x="178.27484"
+         sodipodi:role="line"
+         id="tspan9004" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333359px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="101.70426"
+       y="165.4118"
+       id="text9006"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan9008"
+         sodipodi:role="line"
+         x="101.70426"
+         y="165.4118"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'">/NetworkDriver.Join</tspan><tspan
+         sodipodi:role="line"
+         x="101.70426"
+         y="168.93958"
+         style="font-size:2.82222223px"
+         id="tspan9010">        &quot;NetworkID&quot;: &quot;8035 ... 2ef&quot;,</tspan><tspan
+         sodipodi:role="line"
+         x="101.70426"
+         y="172.46736"
+         style="font-size:2.82222223px"
+         id="tspan9012">        &quot;EndpointID&quot;: &quot;dc90 ... 9543&quot;,</tspan><tspan
+         sodipodi:role="line"
+         x="101.70426"
+         y="175.99513"
+         style="font-size:2.82222223px"
+         id="tspan9014">        &quot;SandboxKey&quot;: &quot;/var/run/docker/netns/c782fce5a23e&quot;,</tspan><tspan
+         sodipodi:role="line"
+         x="101.70426"
+         y="179.52292"
+         style="font-size:2.82222223px"
+         id="tspan9016">        &quot;Options&quot;: {</tspan><tspan
+         sodipodi:role="line"
+         x="101.70426"
+         y="183.05069"
+         style="font-size:2.82222223px"
+         id="tspan9018">            &quot;com.docker.network.endpoint.exposedports&quot;: [],</tspan><tspan
+         sodipodi:role="line"
+         x="101.70426"
+         y="186.57848"
+         style="font-size:2.82222223px"
+         id="tspan9020">            &quot;com.docker.network.portmap&quot;: []</tspan><tspan
+         sodipodi:role="line"
+         x="101.70426"
+         y="190.10625"
+         style="font-size:2.82222223px"
+         id="tspan9024">        }</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text9026"
+       y="194.64032"
+       x="166.41623"
+       style="font-style:normal;font-weight:normal;font-size:4.23333359px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-size:2.82222223px"
+         id="tspan9028"
+         y="194.64032"
+         x="166.41623"
+         sodipodi:role="line">&quot;       InterfaceName&quot;: {</tspan><tspan
+         style="font-size:2.82222223px"
+         y="198.16809"
+         x="166.41623"
+         sodipodi:role="line"
+         id="tspan9030">            &quot;SrcName&quot;: &quot;dns-1.c&quot;,</tspan><tspan
+         style="font-size:2.82222223px"
+         y="201.69588"
+         x="166.41623"
+         sodipodi:role="line"
+         id="tspan9032">            &quot;DstPrefix&quot;: &quot;eth&quot;</tspan><tspan
+         style="font-size:2.82222223px"
+         y="205.22365"
+         x="166.41623"
+         sodipodi:role="line"
+         id="tspan9034">        },</tspan><tspan
+         style="font-size:2.82222223px"
+         y="208.75143"
+         x="166.41623"
+         sodipodi:role="line"
+         id="tspan9036">        &quot;Gateway&quot;: &quot;192.168.3.1&quot;,</tspan><tspan
+         style="font-size:2.82222223px"
+         y="212.27921"
+         x="166.41623"
+         sodipodi:role="line"
+         id="tspan9038">        &quot;GatewayIPv6&quot;: &quot;&quot;,</tspan><tspan
+         style="font-size:2.82222223px"
+         y="215.80699"
+         x="166.41623"
+         sodipodi:role="line"
+         id="tspan9040">        &quot;StaticRoutes&quot;: null,</tspan><tspan
+         style="font-size:2.82222223px"
+         y="219.33476"
+         x="166.41623"
+         sodipodi:role="line"
+         id="tspan9042">        &quot;DisableGatewayService&quot;: false</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text9044"
+       y="224.37003"
+       x="101.92568"
+       style="font-style:normal;font-weight:normal;font-size:4.23333359px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan9062"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+         y="224.37003"
+         x="101.92568"
+         sodipodi:role="line">/NetworkDriver.ProgramExternalConnectivity</tspan><tspan
+         style="font-size:2.82222223px"
+         y="227.8978"
+         x="101.92568"
+         sodipodi:role="line"
+         id="tspan9108" /><tspan
+         style="font-size:2.82222223px"
+         y="231.42558"
+         x="101.92568"
+         sodipodi:role="line"
+         id="tspan15560">        &quot;NetworkID&quot;: &quot;8035 ... ad2ef&quot;,</tspan><tspan
+         style="font-size:2.82222223px"
+         y="234.95335"
+         x="101.92568"
+         sodipodi:role="line"
+         id="tspan9110">        &quot;EndpointID&quot;: &quot;dc90 ... 9543&quot;,</tspan><tspan
+         style="font-size:2.82222223px"
+         y="238.48114"
+         x="101.92568"
+         sodipodi:role="line"
+         id="tspan9112">        &quot;Options&quot;: {</tspan><tspan
+         style="font-size:2.82222223px"
+         y="242.00891"
+         x="101.92568"
+         sodipodi:role="line"
+         id="tspan9114">            &quot;com.docker.network.endpoint.exposedports&quot;: [],</tspan><tspan
+         style="font-size:2.82222223px"
+         y="245.5367"
+         x="101.92568"
+         sodipodi:role="line"
+         id="tspan9116">            &quot;com.docker.network.portmap&quot;: []</tspan><tspan
+         style="font-size:2.82222223px"
+         y="249.06447"
+         x="101.92568"
+         sodipodi:role="line"
+         id="tspan9120">        }</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333359px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="102.05492"
+       y="256.03549"
+       id="text9122"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan9138"
+         sodipodi:role="line"
+         x="102.05492"
+         y="256.03549"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'">/NetworkDriver.EndpointOperInfo</tspan><tspan
+         sodipodi:role="line"
+         x="102.05492"
+         y="259.56326"
+         style="font-size:2.82222223px"
+         id="tspan9175" /><tspan
+         sodipodi:role="line"
+         x="102.05492"
+         y="263.09103"
+         style="font-size:2.82222223px"
+         id="tspan16242">        &quot;NetworkID&quot;: &quot;8035 ... d2ef&quot;,</tspan><tspan
+         sodipodi:role="line"
+         x="102.05492"
+         y="266.61884"
+         style="font-size:2.82222223px"
+         id="tspan9177">        &quot;EndpointID&quot;: &quot;dc90 ... 9543&quot;</tspan><tspan
+         sodipodi:role="line"
+         x="102.05492"
+         y="270.14661"
+         style="font-size:2.82222223px"
+         id="tspan9179"> }</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text9181"
+       y="271.58334"
+       x="144.95505"
+       style="font-style:normal;font-weight:normal;font-size:4.23333359px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan9189"
+         style="font-size:2.82222223px"
+         y="271.58334"
+         x="144.95505"
+         sodipodi:role="line"> &quot;Value&quot;: {</tspan><tspan
+         style="font-size:2.82222223px"
+         y="275.11111"
+         x="144.95505"
+         sodipodi:role="line"
+         id="tspan9200">            &quot;hostNic.Addr&quot;: &quot;192.168.3.2/24&quot;,</tspan><tspan
+         style="font-size:2.82222223px"
+         y="278.63889"
+         x="144.95505"
+         sodipodi:role="line"
+         id="tspan9202">            &quot;hostNic.HardwareAddr&quot;: &quot;62:7b:0b:7d:54:8d&quot;,</tspan><tspan
+         style="font-size:2.82222223px"
+         y="282.16669"
+         x="144.95505"
+         sodipodi:role="line"
+         id="tspan9204">            &quot;hostNic.Name&quot;: &quot;dns-1.c&quot;,</tspan><tspan
+         style="font-size:2.82222223px"
+         y="285.69446"
+         x="144.95505"
+         sodipodi:role="line"
+         id="tspan9206">            &quot;id&quot;: &quot;dc90 ... 543&quot;,</tspan><tspan
+         style="font-size:2.82222223px"
+         y="289.22223"
+         x="144.95505"
+         sodipodi:role="line"
+         id="tspan9208">            &quot;srcName&quot;: &quot;dns-1.c&quot;</tspan><tspan
+         style="font-size:2.82222223px"
+         y="292.75"
+         x="144.95505"
+         sodipodi:role="line"
+         id="tspan9210">        }</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text9212"
+       y="248.97603"
+       x="202.54721"
+       style="font-style:normal;font-weight:normal;font-size:4.23333359px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-size:2.82222223px"
+         id="tspan9214"
+         y="248.97603"
+         x="202.54721"
+         sodipodi:role="line">OK {}</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#757575;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 214.21289,100.54436 0,194.61626"
+       id="path14064"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14270"
+       d="m 210.12262,152.74291 -109.28572,0"
+       style="opacity:0.98000004;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458335;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker14272)"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="opacity:0.98000004;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458335;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker14650)"
+       d="m 100.54467,166.25199 109.28572,0"
+       id="path14648"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path15570"
+       d="m 100.54467,225.92359 109.28572,0"
+       style="opacity:0.98000004;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458335;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker15572)"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path15870"
+       d="m 209.9012,250.73259 -109.28572,0"
+       style="opacity:0.98000004;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458335;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker15872)"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="opacity:0.98000004;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458335;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker16252)"
+       d="m 100.54467,258.05596 109.28572,0"
+       id="path16250"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="opacity:0.98000004;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458335;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker16648)"
+       d="m 209.9012,272.37478 -109.28572,0"
+       id="path16646"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="opacity:0.98000004;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458335;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker17528)"
+       d="m 217.34574,176.86307 65.75931,0"
+       id="path17526"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333359px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="216.6385"
+       y="174.51825"
+       id="text18216"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="216.6385"
+         y="174.51825"
+         id="tspan18218"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'">Create veth interfaces</tspan><tspan
+         sodipodi:role="line"
+         x="216.6385"
+         y="178.04602"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+         id="tspan18228" /><tspan
+         sodipodi:role="line"
+         x="216.6385"
+         y="181.57381"
+         style="font-size:2.82222223px"
+         id="tspan18226">ip link add name dns-1.h type veth peer name dns-1.c</tspan><tspan
+         sodipodi:role="line"
+         x="216.6385"
+         y="185.10158"
+         style="font-size:2.82222223px"
+         id="tspan18220">ip link set dev dns-1.c address 62:7b:0b:7d:54:8d</tspan><tspan
+         sodipodi:role="line"
+         x="216.6385"
+         y="188.62936"
+         style="font-size:2.82222223px"
+         id="tspan18222">ip addr add dev dns-1.h 192.168.3.1/24</tspan><tspan
+         sodipodi:role="line"
+         x="216.6385"
+         y="192.15714"
+         style="font-size:2.82222223px"
+         id="tspan18224">ip link set dev dns-1.h up</tspan></text>
+  </g>
+</svg>
