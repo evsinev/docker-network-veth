@@ -32,10 +32,25 @@ docker run -it --rm \
     alpine /bin/sh
 ```
 
+
+How the Plugin creates the network
+
+```
 ip link add name dns-1.h type veth peer name dns-1.c
 ip link set dev dns-1.c address 62:7b:0b:7d:54:8d
 ip addr add dev dns-1.h 192.168.3.1/24
 ip link set dev dns-1.h up
+```
 
+## Remote API Overview
+
+
+### Create Network
+
+.. figure:: https://github.com/evsinev/docker-network-veth/raw/master/doc/remote-api-create-network.svg
+
+### Create Endpoint
+
+.. figure:: https://github.com/evsinev/docker-network-veth/raw/master/doc/remote-api-create-endpoint.svg
 
 
