@@ -47,10 +47,9 @@ ip link set dev dns-1.h up
 
 ### Create Network
 
-.. figure:: https://github.com/evsinev/docker-network-veth/raw/master/doc/remote-api-create-network.svg
+![Create Network](https://github.com/evsinev/docker-network-veth/raw/master/doc/remote-api-create-network.svg)
+
 
 ### Create Endpoint
 
-.. figure:: https://github.com/evsinev/docker-network-veth/raw/master/doc/remote-api-create-endpoint.svg
-
-
+![Create Endpoint](https://github.com/evsinev/docker-network-veth/raw/master/doc/remote-api-create-endpoint.svg)
