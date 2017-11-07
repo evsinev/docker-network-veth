@@ -83,7 +83,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>io.pne.appfirewall.server.ServerApplication</mainClass>
+                            <mainClass>io.pne.veth.server.ServerApplication</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
