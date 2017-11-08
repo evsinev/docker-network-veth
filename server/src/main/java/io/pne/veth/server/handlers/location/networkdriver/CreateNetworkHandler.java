@@ -1,5 +1,6 @@
-package io.pne.veth.server.handlers;
+package io.pne.veth.server.handlers.location.networkdriver;
 
+import io.pne.veth.server.handlers.IJsonHandler;
 import io.pne.veth.server.handlers.dao.INetworkDao;
 import io.pne.veth.server.handlers.dao.TNetwork;
 import io.pne.veth.server.handlers.model.CreateNetworkRequest;
@@ -9,13 +10,13 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
-public class NetworkDriver_CreateNetworkHandler implements IJsonHandler<CreateNetworkRequest, SuccessResponse> {
+public class CreateNetworkHandler implements IJsonHandler<CreateNetworkRequest, SuccessResponse> {
 
-    private static final Logger LOG = LoggerFactory.getLogger(NetworkDriver_CreateNetworkHandler.class);
+    private static final Logger LOG = LoggerFactory.getLogger(CreateNetworkHandler.class);
 
     private final INetworkDao networkDao;
 
-    public NetworkDriver_CreateNetworkHandler(INetworkDao networkDao) {
+    public CreateNetworkHandler(INetworkDao networkDao) {
         this.networkDao = networkDao;
     }
 
@@ -43,7 +44,7 @@ public class NetworkDriver_CreateNetworkHandler implements IJsonHandler<CreateNe
 
         Object prefix = generic.get("ip.pne.veth.interface.prefix");
         if(prefix == null) {
-            return createRandomName("No ip.pne.veth.interface.suffix");
+            return createRandomName("No ip.pne.veth.interface.prefix");
         }
         return prefix.toString();
     }

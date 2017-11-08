@@ -1,14 +1,15 @@
-package io.pne.veth.server.handlers;
+package io.pne.veth.server.handlers.location.networkdriver;
 
+import io.pne.veth.server.handlers.IJsonHandler;
 import io.pne.veth.server.handlers.dao.IEndpointDao;
 import io.pne.veth.server.handlers.dao.TEndpoint;
 import io.pne.veth.server.handlers.model.*;
 
-public class NetworkDriver_CreateEndPointHandler implements IJsonHandler<CreateEndpointRequest, CreateEndpointResponse> {
+public class CreateEndPointHandler implements IJsonHandler<CreateEndpointRequest, CreateEndpointResponse> {
 
     final IEndpointDao endpointDao;
 
-    public NetworkDriver_CreateEndPointHandler(IEndpointDao endpointDao) {
+    public CreateEndPointHandler(IEndpointDao endpointDao) {
         this.endpointDao = endpointDao;
     }
 

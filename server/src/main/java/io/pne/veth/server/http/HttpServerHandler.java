@@ -11,6 +11,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
+import static io.netty.handler.codec.http.HttpHeaderNames.CONTENT_LENGTH;
 import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
 
 public class HttpServerHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
@@ -29,7 +30,11 @@ public class HttpServerHandler extends SimpleChannelInboundHandler<FullHttpReque
 
         FullHttpResponse response = createResponse(aRequest);
 
-        aContext.write(response)
+        response.headers()
+                .add("vetch", "1.0")
+                .setInt(CONTENT_LENGTH, response.content().readableBytes());
+
+        aContext.writeAndFlush(response)
                 .addListener(ChannelFutureListener.CLOSE);
     }
 
@@ -54,10 +59,10 @@ public class HttpServerHandler extends SimpleChannelInboundHandler<FullHttpReque
     }
 
 
-    @Override
-    public void channelReadComplete(ChannelHandlerContext aContext) throws Exception {
-        aContext.flush();
-    }
+//    @Override
+//    public void channelReadComplete(ChannelHandlerContext aContext) throws Exception {
+////        aContext.flush().close();
+//    }
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {

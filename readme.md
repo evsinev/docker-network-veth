@@ -17,7 +17,7 @@ docker network create \
     --driver  veth \
     --subnet  192.168.4.0/24 \
     --gateway 192.168.4.1 \
-    -o ip.pne.veth.interface.suffix=dns-1 \
+    -o ip.pne.veth.interface.prefix=dns-1 \
     dns-1-network
 ```
 

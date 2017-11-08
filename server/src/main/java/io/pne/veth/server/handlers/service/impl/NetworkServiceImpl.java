@@ -34,7 +34,7 @@ public class NetworkServiceImpl implements INetworkService {
     @Override
     public String getNetworkGateway(String aNetworkId, String aEndpointId) {
         TNetwork network = networkDao.findNetwork(aNetworkId);
-        if(network == null && commandService != null) {
+        if(network == null) {
             network = findNetworkInDocker(aNetworkId);
             if(network != null) {
                 networkDao.addNetwork(network);
@@ -64,6 +64,7 @@ public class NetworkServiceImpl implements INetworkService {
                 .add("inspect")
                 .add(aNetworkId)
                 .build();
+        LOG.debug("Executing {} ...", command);
         try {
             String json = commandService.executeCommand(command);
             LOG.info("network inspect = {}", json);

@@ -1,5 +1,6 @@
-package io.pne.veth.server.handlers;
+package io.pne.veth.server.handlers.location.plugin;
 
+import io.pne.veth.server.handlers.IJsonHandler;
 import io.pne.veth.server.handlers.model.ActivateResponse;
 import io.pne.veth.server.handlers.model.PluginType;
 

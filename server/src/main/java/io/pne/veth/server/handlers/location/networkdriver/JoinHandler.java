@@ -1,24 +1,20 @@
-package io.pne.veth.server.handlers;
+package io.pne.veth.server.handlers.location.networkdriver;
 
+import io.pne.veth.server.handlers.IJsonHandler;
 import io.pne.veth.server.handlers.dao.IEndpointDao;
-import io.pne.veth.server.handlers.dao.INetworkDao;
-import io.pne.veth.server.handlers.dao.TEndpoint;
-import io.pne.veth.server.handlers.dao.TNetwork;
 import io.pne.veth.server.handlers.model.*;
 import io.pne.veth.server.handlers.service.INetworkService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.StringTokenizer;
+public class JoinHandler implements IJsonHandler<JoinRequest, JoinResponse> {
 
-public class NetworkDriver_JoinHandler implements IJsonHandler<JoinRequest, JoinResponse> {
-
-    private static final Logger LOG = LoggerFactory.getLogger(NetworkDriver_JoinHandler.class);
+    private static final Logger LOG = LoggerFactory.getLogger(JoinHandler.class);
 
     final IEndpointDao endpointDao;
     final INetworkService  networkService;
 
-    public NetworkDriver_JoinHandler(IEndpointDao endpointDao, INetworkService aNetworkService) {
+    public JoinHandler(IEndpointDao endpointDao, INetworkService aNetworkService) {
         this.endpointDao = endpointDao;
         networkService = aNetworkService;
     }

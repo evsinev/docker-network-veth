@@ -6,5 +6,5 @@ import java.io.IOException;
 
 public interface ICommandService {
 
-    String executeCommand(ShellCommand aCommand) throws IOException;
+    String executeCommand(ShellCommand aCommand) throws IOException, InterruptedException;
 }

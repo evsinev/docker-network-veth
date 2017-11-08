@@ -1,8 +1,9 @@
 package io.pne.veth.server.handlers;
 
 import com.google.gson.Gson;
-import io.netty.buffer.ByteBuf;
+import io.netty.buffer.ByteBufUtil;
 import io.netty.buffer.Unpooled;
+import io.netty.channel.ChannelFutureListener;
 import io.netty.handler.codec.http.DefaultFullHttpResponse;
 import io.netty.handler.codec.http.FullHttpRequest;
 import io.netty.handler.codec.http.FullHttpResponse;
@@ -12,11 +13,14 @@ import io.pne.veth.server.http.IHttpRequestListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
+import static io.netty.handler.codec.http.HttpHeaderNames.CONTENT_LENGTH;
 import static io.netty.handler.codec.http.HttpResponseStatus.NOT_FOUND;
 import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
+import static io.pne.veth.server.utils.Strings.padRight;
 
 public class DispatchHandler implements IHttpRequestListener {
 
@@ -36,16 +40,16 @@ public class DispatchHandler implements IHttpRequestListener {
         String uri = aRequest.uri();
         IHttpRequestListener listener = listeners.get(uri);
         if(listener == null) {
-            return error(uri, "Not Found", NOT_FOUND);
+            String body = aRequest.content().toString(StandardCharsets.UTF_8);
+            return error(uri, body, NOT_FOUND);
         }
 
         return listener.createResponse(aRequest);
     }
 
-    private FullHttpResponse error(String aUrl, String aMessage, HttpResponseStatus status) {
-        ByteBuf buffer = Unpooled.wrappedBuffer(aMessage.getBytes());
-        LOG.error("{} - {}", aUrl, aMessage);
-        return new DefaultFullHttpResponse(HTTP_1_1, status, buffer, false);
+    private FullHttpResponse error(String aUrl, String aBody, HttpResponseStatus status) {
+        LOG.error("{} - {} {}", aUrl, status, aBody);
+        return new DefaultFullHttpResponse(HTTP_1_1, status, Unpooled.wrappedBuffer(new byte[]{}));
 
     }
 
@@ -68,11 +72,15 @@ public class DispatchHandler implements IHttpRequestListener {
         public DispatchHandler build() {
             LOG.info("Dispatch URL:");
 
+            int keyMax      = 50;
+            int requestMax  = 35;
+            int responseMax = 40;
+
             for (Map.Entry<String, IHttpRequestListener> entry : listeners.entrySet()) {
                 final IHttpRequestListener listener = entry.getValue();
                 if(listener instanceof JsonHandler) {
                     JsonHandler jsonListener = (JsonHandler) listener;
-                    LOG.info("    {} - {} - {}", entry.getKey(), jsonListener.getRequestClass().getSimpleName(), jsonListener.getHandlerClass().getSimpleName());
+                    LOG.info("    {} - {} - {}", padRight(entry.getKey(), keyMax), padRight(jsonListener.getRequestClass().getSimpleName(), requestMax), padRight(jsonListener.getHandlerClass().getSimpleName(), responseMax));
                 } else {
                     LOG.info("    {} - {}", entry.getKey(), listener.getClass().getSimpleName());
                 }

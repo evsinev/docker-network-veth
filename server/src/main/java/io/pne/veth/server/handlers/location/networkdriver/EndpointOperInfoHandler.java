@@ -1,5 +1,6 @@
-package io.pne.veth.server.handlers;
+package io.pne.veth.server.handlers.location.networkdriver;
 
+import io.pne.veth.server.handlers.IJsonHandler;
 import io.pne.veth.server.handlers.dao.IEndpointDao;
 import io.pne.veth.server.handlers.dao.TEndpoint;
 import io.pne.veth.server.handlers.model.InfoRequest;
@@ -7,11 +8,11 @@ import io.pne.veth.server.handlers.model.InfoResponse;
 
 import java.util.HashMap;
 
-public class NetworkDriver_EndpointOperInfo implements IJsonHandler<InfoRequest, InfoResponse> {
+public class EndpointOperInfoHandler implements IJsonHandler<InfoRequest, InfoResponse> {
 
     private final IEndpointDao endpointDao;
 
-    public NetworkDriver_EndpointOperInfo(IEndpointDao endpointDao) {
+    public EndpointOperInfoHandler(IEndpointDao endpointDao) {
         this.endpointDao = endpointDao;
     }
 
